@@ -1,0 +1,541 @@
+
+body{
+   background-image: url(image/background.jpg);
+   background-size: 100%;
+   color: white;
+   font-family: Noto Serif TC; 
+   text-shadow:3px 3px 0 rgb(87, 83, 83);
+
+}
+header{
+   font-size: 70px;
+   background-color: rgba(255, 255, 255, 0.5);
+   border-radius: 10px; /*角丸くする*/
+   margin-left: 25%;
+   margin-bottom: 10px;
+   font-weight: bold;
+   -webkit-transition: 0.3s ease-in-out;
+   transition: 0.3s ease-in-out;
+}
+header:hover{
+  background-color: #716f6f;
+}
+
+section {
+   display: flex;
+  }
+.self-introduction{
+ text-align: center;
+ font-size: 20px;
+ -webkit-transition: 0.3s ease-in-out;
+   transition: 0.3s ease-in-out;
+}
+.self-introduction:hover{
+  background-color: #716f6f;
+
+}
+.fixed {
+ width: 20%; /* 左半分の固定幅を指定 */
+ position: fixed; /* 左半分を固定位置に設定 */
+ border-radius: 10px; /*角丸くする*/
+ background-color: rgba(255, 255, 255, 0.5);
+ margin: 10px;
+ margin-top: -5%;
+}
+img{
+   border-radius: 10px; /*角丸くする*/
+}
+.each-title{
+  font-size: 35px;
+  font-weight: bold;
+}
+.container {
+   display: flex;
+   margin-left:24%;
+ }
+ 
+ .introduce-bg, .quote-bg,.club-bg,.interest-bg {
+   flex: 1; /* 等しい幅で横に並べる */
+   margin: 10px; /* 要素間のスペースを設定 */
+   background-color: rgba(255, 255, 255, 0.5);
+   border-radius: 10px;  
+   -webkit-transition: 0.3s ease-in-out;
+   transition: 0.3s ease-in-out;
+ }
+ .introduce-bg:hover {
+  background-color: #716f6f;
+}
+.club-bg:hover {
+ background-color: #716f6f;
+} 
+.interest-bg:hover {
+ background-color: #716f6f;
+} 
+.quote-bg:hover {
+ background-color: #716f6f;
+}
+ .introduce, .quote{
+   margin-left: 15px;
+   margin-bottom: 10px;
+   font-size: 18px;
+   
+   
+ }
+ /*---pie chart---*/
+@media screen and (min-width: 751px) {
+   .pie-chart-wrap {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+   }
+ }
+ .skill{
+  margin-top: 15px;
+}
+
+.each-title-1{
+  margin: 15px 15px 50px 15px;
+  font-weight: bold;
+  font-size: 35px;
+}
+  .content{
+   margin-left: 25%;
+   background-color: rgba(255, 255, 255, 0.5);
+   border-radius: 10px; /*角丸くする*/
+   -webkit-transition: 0.3s ease-in-out;
+   transition: 0.3s ease-in-out;
+}
+.content:hover{
+  background-color: #716f6f;
+}
+ .box {
+   position: relative;
+   width: 33.3333333333%;
+   height: 200px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+ }
+ .box .percent svg {
+   position: relative;
+   width: 150px;
+   height: 150px;
+   -webkit-transform: rotate(-90deg);
+           transform: rotate(-90deg);
+ }
+ .box .percent svg circle {
+   position: relative;
+   fill: none;
+   stroke-width: 10;
+   stroke: #f3f3f3;
+   stroke-dasharray: 440;
+   stroke-dashoffset: 0;
+   stroke-linecap: round;
+ }
+ .box .percent .number {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height:60%;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   color: white;
+ }
+ .box .percent .number .title {
+   font-size: 50px;
+ }
+ .box .percent .number .title span {
+   font-size: 22px;
+ }
+ .box .text {
+   padding: 10px 0 20px 0;
+   text-align: center;
+   font-weight: bold;
+   font-size: 22px;
+   font-family: Noto Serif TC;
+   
+ }
+ .box .percent .line {
+   -webkit-animation: circleAnim 1.5s forwards;
+           animation: circleAnim 1.5s forwards;
+ }
+ .box.japanese .percent .line {
+   stroke-dashoffset: 30;
+   stroke:rgb(54, 49, 49);
+ }
+ .box.chinese .percent .line {
+   stroke-dashoffset: 100;
+   stroke:rgb(54, 49, 49);
+ }
+ .box.english .percent .line {
+   stroke-dashoffset: 125;
+   stroke:rgb(54, 49, 49);
+ }
+  
+ @-webkit-keyframes circleAnim {
+   0% {
+     stroke-dasharray: 0 440;
+   }
+   99.9%, to {
+     stroke-dasharray: 440 440;
+   }
+ }
+  
+ @keyframes circleAnim {
+   0% {
+     stroke-dasharray: 0 440;
+   }
+   99.9%, to {
+     stroke-dasharray: 440 440;
+   }
+ }
+ /* bar graph*/
+.bar-graph-wrap {
+   position: relative;
+   height: 350px;
+   overflow: hidden;
+ }
+ .bar-graph-wrap .graph {
+   height: 20px;
+   position: absolute;
+   left: 0;
+   border-radius: 0 10px 10px 0;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+   padding: 10px;
+   -webkit-animation: graphAnim 2.5s forwards;
+           animation: graphAnim 2.5s forwards;
+ }
+ .bar-graph-wrap .graph span {
+   font-size: 14px;
+   color: #ffffff;
+ }
+ @media screen and (max-width: 750px) {
+   .bar-graph-wrap .graph span {
+     font-size: 12px;
+   }
+ }
+ .bar-graph-wrap .graph.c {
+   top: 0;
+   background: rgb(54, 49, 49);
+   width: 50%;
+ }
+ .bar-graph-wrap .graph.python {
+   top: 20%;
+   margin: auto;
+   background: rgb(54, 49, 49);
+   width: 65%;
+ }
+ .bar-graph-wrap .graph.android {
+  top: 40%;
+   background: rgb(54, 49, 49);
+   width: 70%;
+ }
+ .bar-graph-wrap .graph.java {
+   top: 60%;
+   background: rgb(54, 49, 49);
+   width: 65%;
+ }
+ .bar-graph-wrap .graph.htmlcss {
+   top: 80%;
+   background: rgb(54, 49, 49);
+   width: 70%;
+ }
+  
+ @-webkit-keyframes graphAnim {
+   0% {
+     -webkit-transform: translateX(-100%);
+             transform: translateX(-100%);
+   }
+   100% {
+     -webkit-transform: translateX(0);
+             transform: translateX(0);
+   }
+ }
+  
+ @keyframes graphAnim {
+   0% {
+     -webkit-transform: translateX(-100%);
+             transform: translateX(-100%);
+   }
+   100% {
+     -webkit-transform: translateX(0);
+             transform: translateX(0);
+   }
+ }
+ .personal-infor{
+   background-color: rgba(255, 255, 255, 0.5);
+   border-radius: 10px; /*角丸くする*/
+   margin-left: 25%;
+   -webkit-transition: 0.3s ease-in-out;
+   transition: 0.3s ease-in-out;
+}
+.personal-infor:hover{
+  background-color: #716f6f;
+}
+.three-pic{
+  border-radius: 10px; /*角丸くする*/
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+  height: 400px;
+  text-align: center;
+}
+
+.three-pic-0 {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  animation: change-img-three-pic-anim 30s infinite;
+
+}
+
+.three-pic-0:nth-of-type(1) {
+  animation-delay: 0s;
+}
+.three-pic-0:nth-of-type(2) {
+  animation-delay: 5s;
+}
+.three-pic-0:nth-of-type(3) {
+  animation-delay: 10s;
+}
+
+@keyframes change-img-three-pic-anim {
+  0%{ opacity: 0;}
+  20%{ opacity: 1;}
+  100%{ opacity: 0;}
+}
+.word-title{
+  font-size: 40px;
+  text-align: center;
+}
+.word{
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+/*タブのスタイル*/
+.tab_item {
+  width: calc(100%/5);
+  background-color: rgb(42, 42, 42);
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color:white;
+  display: block;
+  float: left;
+  transition: all 0.2s ease;
+}
+.tab_item:hover {
+  opacity: 0.75;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+  display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+  display: none;
+  padding-top: 30px;
+  text-align: center;
+  clear: both;
+  overflow: hidden;
+
+}
+/*選択されているタブのコンテンツのみを表示*/
+#high:checked ~ #high_content,
+#ch:checked ~ #ch_content,
+#cookie:checked ~ #cookie_content,
+#management:checked ~ #management_content,
+#ceremony:checked ~ #ceremony_content{
+  display: block;
+}
+.three-pic-1{
+  
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+  height: 400px;
+}
+
+.three-pic-2 {
+  position: absolute;
+  width: 611px;
+  height: 400px;
+  opacity: 0;
+  animation: change-img-three-pic-club-anim 30s infinite;
+ 
+}
+
+.three-pic-2:nth-of-type(1) {
+  animation-delay: 0s;
+}
+.three-pic-2:nth-of-type(2) {
+  animation-delay: 5s;
+}
+.three-pic-2:nth-of-type(3) {
+  animation-delay: 10s;
+}
+
+@keyframes change-img-three-pic-club-anim {
+  0%{ opacity: 0;}
+  20%{ opacity: 1;}
+  100%{ opacity: 0;}
+}
+/*タブのスタイル*/
+.tab_item-2 {
+  width: calc(100%/2);
+  background-color: rgb(42, 42, 42);
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color:white;
+  display: block;
+  float: left;
+  transition: all 0.2s ease;
+}
+.tab_item-2:hover {
+  opacity: 0.75;
+}
+/*ラジオボタンを全て消す*/
+input[name="tab_item-2"] {
+  display: none;
+}
+/*タブ切り替えの中身のスタイル*/
+.tab_content-2 {
+  display: none;
+  padding-top: 30px;
+  clear: both;
+  overflow: hidden;
+}
+
+/*選択されているタブのコンテンツのみを表示*/
+#baseball:checked ~ #baseball_content,
+#flower:checked ~ #flower_content{
+  display: block;
+}
+ /*選択されているタブのコンテンツのみを表示*/
+ #JP:checked ~ #JP_content,
+ #RP:checked ~ #RP_content,
+ #VN:checked ~ #VN_content,
+ #MY:checked ~ #MY_content{
+   display: block;
+ }
+ /*タブのスタイル*/
+ .tab_item-3 {
+   width: calc(100%/4);
+   background-color: rgb(42, 42, 42);
+   line-height: 50px;
+   font-size: 16px;
+   text-align: center;
+   color:white;
+   display: block;
+   float: left;
+   transition: all 0.2s ease;
+ }
+ .tab_item-3:hover {
+   opacity: 0.75;
+ }
+ /*ラジオボタンを全て消す*/
+ input[name="tab_item-3"] {
+   display: none;
+ }
+ /*タブ切り替えの中身のスタイル*/
+ .tab_content-3 {
+   display: none;
+   padding-top: 30px;
+   clear: both;
+   overflow: hidden;
+ 
+ }
+ .three-pic-3{
+   
+   position: relative;
+   width: 500px;
+   max-width: 100%;
+   height: 400px;
+ }
+ .three-pic-4 {
+   position: absolute;
+   width: 611px;
+   height: 400px;
+   opacity: 0;
+   animation: change-img-three-pic-club-anim 30s infinite;
+ 
+ }
+ .three-pic-4:nth-of-type(1) {
+   animation-delay: 0s;
+ }
+ .three-pic-4:nth-of-type(2) {
+   animation-delay: 5s;
+ }
+ .three-pic-4:nth-of-type(3) {
+   animation-delay: 10s;
+ }
+ 
+ @keyframes change-img-three-pic-interest-anim {
+   0%{ opacity: 0;}
+   20%{ opacity: 1;}
+   100%{ opacity: 0;}
+ }
+#topButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding:  10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+#topButton:hover {
+  background-color: #716f6f;
+}
+
+footer {
+   background-color: rgba(255, 255, 255, 0.5);
+   text-align: center; /* テキストを中央寄せにする */
+   padding: 10px; /* フッター内の余白を追加 */
+   margin-top: 10px;
+   border-radius: 10px; 
+   font-size: 15px;-webkit-transition: 0.3s ease-in-out;
+   transition: 0.3s ease-in-out;
+}
+footer:hover{
+  background-color: #716f6f;
+}
